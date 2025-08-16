@@ -35,6 +35,7 @@
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
+    scroll-behavior: smooth;
   }
   body,
   h1,
@@ -62,7 +63,7 @@
     height: 100vh;
     line-height: 1.6;
     position: relative;
-    scroll-behavior: smooth;
+
     overflow-x: hidden;
   }
   a {
@@ -758,6 +759,7 @@
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    align-items: center;
   }
   .modal-get-a_quote h2 {
     font-size: 3rem;
@@ -861,5 +863,39 @@
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
     backdrop-filter: blur(3px);
     z-index: 5; /* Ensures it appears above other elements */
+  }
+  .get-started {
+    width: 600px;
+    margin: 0 auto;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: var(--about-bckgrnd-clr);
+    border-radius: 20px;
+    animation: slideIn 0.5s ease-in-out forwards;
+  }
+  .form-container {
+    display: flex;
+    width: 400px;
+    margin: 2rem auto;
+    text-align: center;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    row-gap: 20px;
+    padding: 20px;
+    animation: slideUp 1s ease-in forwards;
+  }
+  .form-container .input {
+    height: 20px;
+  }
+
+  .fullname {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

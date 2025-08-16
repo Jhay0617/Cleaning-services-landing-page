@@ -11,11 +11,11 @@
       <img src="assets/cleaning-logo.png" alt="A logo of cleaning Services1" />
       <nav>
         <ul class="primary-navigation">
-          <li><a href="#" class="nav-links">Home</a></li>
-          <li><a href="#" class="nav-links">About Us</a></li>
-          <li><a href="#" class="nav-links">Services</a></li>
-          <li><a href="#" class="nav-links">Blog</a></li>
-          <li><a href="#" class="nav-links">Contact</a></li>
+          <li><a href="#hero" class="nav-links">Home</a></li>
+          <li><a href="#about-us" class="nav-links">About Us</a></li>
+          <li><a href="#services" class="nav-links">Services</a></li>
+          <li><a href="#blog" class="nav-links">Blog</a></li>
+          <li><a href="#contact-section" class="nav-links">Contact</a></li>
         </ul>
       </nav>
       <button class="primary-btn" id="quote">Get a quote</button>
@@ -23,7 +23,7 @@
     <main class="wrapper">
       <!-- hero section -->
 
-      <section class="hero-section wrapper">
+      <section class="hero-section wrapper" id="hero">
         <div class="one-column">
           <p class="hero-text">Quality cleaning at a fair price.</p>
           <h1 class="heading">
@@ -34,7 +34,7 @@
             energy, and money.
           </p>
           <div class="buttons">
-            <button class="primary-btn">Get Start Now</button>
+            <button class="primary-btn get-btn">Get Start Now</button>
             <button class="secondary-btn">View All Services</button>
           </div>
         </div>
@@ -42,7 +42,7 @@
 
       <!-- services section -->
 
-      <section class="services wrapper">
+      <section class="services wrapper" id="services">
         <div class="services-heading container">
           <h2 class="heading-service">We always provide the best service</h2>
           <div class="services-right">
@@ -111,7 +111,7 @@
 
       <!-- team section -->
 
-      <section class="wrapper team-section">
+      <section class="wrapper team-section" id="team">
         <div class="services-heading container">
           <h2 class="heading-service">
             Effective Cleaning Requires an Expert Cleaning Team
@@ -208,7 +208,7 @@
 
       <!-- About Us Section -->
 
-      <section class="wrapper about-section">
+      <section class="wrapper about-section" id="about-us">
         <div class="two-columns container">
           <div class="column-left">
             <img src="assets/about-image.png" alt="picture of the team" />
@@ -253,7 +253,7 @@
               </div>
             </div>
             <div class="buttons">
-              <button class="primary-btn">Get Start Now</button>
+              <button class="primary-btn get-btn">Get Start Now</button>
               <button class="secondary-btn">View All Services</button>
             </div>
           </div>
@@ -376,7 +376,7 @@
           </div>
         </div>
       </section>
-      <section class="blog wrapper">
+      <section class="blog wrapper" id="blog">
         <div class="blog-header">
           <div class="blog-two_columns container">
             <div class="blog-left_column">
@@ -438,7 +438,10 @@
           </div>
         </div>
       </section>
-      <section class="contact-section wrapper">
+
+      <!-- contact section -->
+
+      <section class="contact-section wrapper" id="contact-section">
         <div class="contact-two_column container">
           <div class="contact-left_column">
             <h2 class="contact-text">Find US</h2>
@@ -602,6 +605,27 @@
         </div>
         <div class="form-btn">
           <button class="primary-btn">Submit Form</button>
+        </div>
+      </div>
+      <div class="get-started hidden">
+        <div class="form-container">
+          <div class="form-header">
+            <h2 class="form-quote_heading">Get Started</h2>
+            <img src="assets/close.svg" alt="" class="btn-close" />
+          </div>
+          <p class="blurred-text">get started by completing the form below</p>
+          <div class="fullname">
+            <input type="text" class="input" placeholder="First Name" />
+            <input type="text" class="input" placeholder="Last Name" />
+          </div>
+
+          <input
+            type="email"
+            class="input"
+            placeholder="ex: yourname@gmail.com"
+          />
+
+          <button class="primary-btn">Get Started</button>
         </div>
       </div>
       <div class="overlay hidden"></div>
