@@ -18,17 +18,12 @@
           <li><a href="#" class="nav-links">Contact</a></li>
         </ul>
       </nav>
-      <button class="primary-btn">Get a quote</button>
+      <button class="primary-btn" id="quote">Get a quote</button>
     </header>
     <main class="wrapper">
       <!-- hero section -->
 
-      <section class="hero">
-        <img
-          src="assets/hero-section_img.png"
-          alt="cleaning team"
-          class="hero-section_img"
-        />
+      <section class="hero-section wrapper">
         <div class="one-column">
           <p class="hero-text">Quality cleaning at a fair price.</p>
           <h1 class="heading">
@@ -524,6 +519,93 @@
         </div>
         <p class="footer-end">2024 "Procleaning" All Rights Received</p>
       </section>
+      <div class="modal-get-a_quote hidden">
+        <div class="get-a_quote-form">
+          <div class="form-header">
+            <h2 class="form-quote_heading">Get a Quote</h2>
+            <img src="assets/close.svg" alt="" class="btn-close" />
+          </div>
+          <div class="form">
+            <div class="test">
+              <div class="label">
+                <p>Name</p>
+              </div>
+              <div class="form-inputs">
+                <input type="text" class="input" placeholder="First Name" />
+                <input type="text" class="input" placeholder="Last Name" />
+              </div>
+            </div>
+            <div class="test">
+              <div class="label">
+                <p>Email</p>
+              </div>
+              <div class="form-inputs">
+                <input type="text" class="input" placeholder="Email" />
+              </div>
+            </div>
+            <div class="test">
+              <div class="label">
+                <p>Phone Number</p>
+              </div>
+              <div class="form-inputs">
+                <input type="text" class="input" placeholder="Phone Number" />
+              </div>
+            </div>
+            <div class="test">
+              <div class="label-address">
+                <p>Address</p>
+              </div>
+              <div class="address">
+                <input type="text" class="input" placeholder="street address" />
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="street address line 2"
+                />
+                <div class="city-state_province">
+                  <input type="text" class="input" placeholder="City" />
+                  <input
+                    type="text"
+                    class="input"
+                    placeholder="State/Province"
+                  />
+                </div>
+                <input type="text" class="input" placeholder="Zip Code" />
+              </div>
+            </div>
+            <div class="test">
+              <div class="label">
+                <p>Which Subscription</p>
+              </div>
+              <div class="form-inputs">
+                <input type="checkbox" class="check" />
+                <p>Basic Package</p>
+                <input type="checkbox" class="check" />
+                <p>Enterprise Package</p>
+                <input type="checkbox" class="check" />
+                <p>Premium Package</p>
+              </div>
+            </div>
+            <div class="test">
+              <div class="label">
+                <p>Additional Information</p>
+              </div>
+              <div class="form-inputs">
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="Additional Information"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-btn">
+          <button class="primary-btn">Submit Form</button>
+        </div>
+      </div>
+      <div class="overlay hidden"></div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
